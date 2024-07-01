@@ -1,0 +1,8 @@
+---
+- name: Install and Configure Jenkins
+  hosts: label_environment_jenkins
+  become: true
+  roles:
+    - role: installjenkins
+    - role: configurejenkins
+
